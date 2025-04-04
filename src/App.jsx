@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaReact, FaNodeJs, FaGitAlt, FaLinkedin, FaFacebook, FaTwitter,  FaHandshake, FaEnvelope, FaPhone, FaMapMarkerAlt, FaExternalLinkAlt, FaBriefcase, FaWhatsapp } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiPython, SiMongodb } from 'react-icons/si';
+import praise from './assets/praise.jpeg';
 import './App.css'
 
 function App() {
@@ -22,31 +23,63 @@ function App() {
           : 'bg-[#efefed]'
       }`}>
         <div className="container mx-auto px-6 py-4">
-          <h2 className="text-2xl font-bold">PraiseKeyz</h2>
+        <h2 className="text-2xl font-bold flex items-center gap-2">PraiseKeyz <span className="text-2xl">🎹</span></h2>
         </div>
       </header>
 
       <section className='min-h-screen bg-[#efefed] pt-20 rounded-b-[50px]'>
         <div className="container mx-auto px-6 py-20">
-          <div className="flex items-center justify-between gap-12">
-            <div className="flex-1 space-y-6">
-              <h1 className="text-5xl font-bold leading-tight">
-                Creative Software Engineer
-              </h1>
-              <span className=" text-xl text-black">Building Digital Excellence</span>
-              <p className="text-lg text-gray-700">
-                I'm a software engineer with a passion for creating innovative solutions.
-                Transforming ideas into seamless digital experiences.
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-15">
+            <div className="flex-1 space-y-8 text-center md:text-left">
+              <div className="space-y-4">
+                <span className="inline-block text-sm md:text-base bg-black text-white px-4 py-2 rounded-full">
+                  Welcome to my portfolio
+                </span>
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  Creative Software <span className="text-transparent bg-clip-text bg-gradient-to-r from-black to-gray-500">Engineer</span>
+                </h1>
+                <span className="block text-xl md:text-2xl text-black font-medium">Building Digital Excellence</span>
+              </div>
+              
+              <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
+                I'm a software engineer with a passion for creating innovative solutions. 
+                Specializing in full-stack development, I transform complex problems into 
+                elegant, user-friendly applications. With expertise in modern technologies 
+                and a keen eye for detail, I bridge the gap between creative design and 
+                technical excellence.
               </p>
-              <button className="px-8 py-3 bg-black text-white rounded-lg transition-colors">
-                Get in touch
-              </button>
+
+              <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
+                <button 
+                                  onClick={() => document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })}
+                 className="px-8 py-3 bg-black text-white rounded-lg transition-all duration-300 hover:transform hover:scale-105 hover:shadow-lg">
+                  View Projects
+                </button>
+                <button 
+                                  onClick={() => document.getElementById('contacts').scrollIntoView({ behavior: 'smooth' })}
+                className="px-8 py-3 border-2 border-black rounded-lg transition-all duration-300 hover:bg-black hover:text-white">
+                  Contact Me
+                </button>
+              </div>
+
+              <div className="flex items-center justify-center md:justify-start gap-6 pt-4">
+                <span className="text-sm text-gray-600">Tech Stack |</span>
+                <div className="flex gap-4 text-2xl text-gray-700">
+                  <FaReact className="hover:text-blue-500 transition-colors" />
+                  <FaNodeJs className="hover:text-green-500 transition-colors" />
+                  <SiTypescript className="hover:text-blue-600 transition-colors" />
+                  <SiTailwindcss className="hover:text-cyan-500 transition-colors" />
+                  <SiMongodb className="hover:text-green-600 transition-colors" />
+                </div>
+              </div>
             </div>
-            <div className="flex-1">
+
+            <div className="flex-1 relative">
+              <div className="absolute -inset-4 bg-gradient-to-r from-black to-gray-500 rounded-bl-[70px] rounded-tr-[80px] blur-2xl opacity-20 group-hover:opacity-30 transition-all duration-300"></div>
               <img 
-                src="/your-image.jpg" 
+                src={praise} 
                 alt="Profile" 
-                className="w-full h-[500px] object-cover rounded-2xl"
+                className="relative w-100 max-w-[400px] h-[400px] object-cover rounded-bl-[70px] rounded-tr-[80px] border-2 border-black mx-auto"
               />
             </div>
           </div>
@@ -125,7 +158,7 @@ function App() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#efefed] rounded-t-[50px] rounded-b-[50px]">
+      <section id='projects' className="py-20 px-6 bg-[#efefed] rounded-t-[50px] rounded-b-[50px]">
         <div className="container mx-auto">
           <h2 className="text-4xl font-bold underline mb-12">Projects</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -233,7 +266,7 @@ function App() {
         </div>
       </section>
 
-      <section className="py-20 px-6 bg-[#efefed] rounded-t-[50px]">
+      <section id='contacts' className="py-20 px-6 bg-[#efefed] rounded-t-[50px]">
         <div className="container mx-auto max-w-2xl text-center">
           <FaHandshake className="text-6xl mx-auto mb-6 text-black" />
           <h1 className="text-4xl font-bold mb-8">Text me about your next Project</h1>
