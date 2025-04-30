@@ -464,7 +464,7 @@ function App() {
                 <h3 className="text-2xl font-primary font-bold">Text-to-Speech App</h3>
                 <motion.a 
                   whileHover={{ scale: 1.1 }}
-                  href="https://text-to-speech-app-praisekeys.vercel.app" 
+                  href="https://labstudio.vercel.app" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
