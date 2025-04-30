@@ -371,7 +371,7 @@ function App() {
                 <h3 className="text-2xl font-primary font-bold">Learn Whitehouse</h3>
                 <motion.a 
                   whileHover={{ scale: 1.1 }}
-                  href="www.learnwhitehouse.com" 
+                  href="https://www.learnwhitehouse.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
