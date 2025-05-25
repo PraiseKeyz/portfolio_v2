@@ -358,6 +358,37 @@ function App() {
             viewport={{ margin: "-100px" }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
+
+
+<motion.div
+              variants={fadeInUp}
+              whileHover={{ scale: 1.05 }}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ margin: "-100px" }}
+              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-primary font-bold">Creativity Verse</h3>
+                <motion.a 
+                  whileHover={{ scale: 1.1 }}
+                  href="https://creativity-verse.vercel.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
+                >
+                  <FaExternalLinkAlt className="w-4 h-4 text-black" />
+                </motion.a>
+              </div>
+              <p className="text-gray-600 mb-6 font-secondary">A digital community for creators to collaborate, learn, and showcase their work. Join a vibrant space where innovation meets inspiration.</p>
+              <div className="flex flex-wrap gap-2">
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">React</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">TailwindCSS</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">MongoDB</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Node.Js</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Express.Js</motion.span>
+              </div>
+            </motion.div>
             {/* Project Card 1 */}
             <motion.div
               variants={fadeInUp}
@@ -647,7 +678,7 @@ function App() {
                 variants={fadeInUp}
                 className="hidden md:block w-[45%] text-right pr-8"
               >
-                <span className="text-gray-600 font-secondary">2022 - Present</span>
+                <span className="text-gray-600 font-secondary">April 2025 - May 2025</span>
               </motion.div>
 
               <motion.div
@@ -657,11 +688,11 @@ function App() {
                 <div className="flex items-center gap-3 mb-3">
                   <FaBriefcase className="text-2xl text-black" />
                   <div>
-                    <h3 className="text-xl font-primary font-bold">Software Engineer</h3>
+                    <h3 className="text-xl font-primary font-bold">Backend Engineer</h3>
                     <span className="block md:hidden text-sm text-gray-600 font-secondary mt-1">2022 - Present</span>
                   </div>
                 </div>
-                <p className="font-medium font-secondary text-gray-700 mb-2">Tech Company</p>
+                <p className="font-medium font-secondary text-gray-700 mb-2">BlackSolvent</p>
                 <ul className="space-y-2 text-gray-600 font-secondary list-disc list-inside">
                   <li>Led development of microservices architecture serving 1M+ users</li>
                   <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
@@ -690,7 +721,7 @@ function App() {
                 variants={fadeInUp}
                 className="hidden md:block w-[45%] text-right pr-8"
               >
-                <span className="text-gray-600 font-secondary">2020 - 2022</span>
+                <span className="text-gray-600 font-secondary">March 2025 - April 2025</span>
               </motion.div>
 
               <motion.div
@@ -700,11 +731,11 @@ function App() {
                 <div className="flex items-center gap-3 mb-3">
                   <FaBriefcase className="text-2xl text-black" />
                   <div>
-                    <h3 className="text-xl font-primary font-bold">Software Developer</h3>
+                    <h3 className="text-xl font-primary font-bold">Fullstack Developer</h3>
                     <span className="block md:hidden text-sm text-gray-600 font-secondary mt-1">2020 - 2022</span>
                   </div>
                 </div>
-                <p className="font-medium font-secondary text-gray-700 mb-2">Tech Startup</p>
+                <p className="font-medium font-secondary text-gray-700 mb-2">Crativity Verse</p>
                 <ul className="space-y-2 text-gray-600 font-secondary list-disc list-inside">
                   <li>Developed and maintained multiple web applications</li>
                   <li>Implemented responsive designs and optimized performance</li>
