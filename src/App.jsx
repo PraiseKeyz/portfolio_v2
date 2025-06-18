@@ -3,7 +3,7 @@ import { FaReact, FaNodeJs, FaGitAlt, FaLinkedin, FaFacebook, FaTwitter,  FaHand
 import { SiTypescript, SiTailwindcss, SiPython, SiMongodb } from 'react-icons/si';
 import praise from './assets/praise.jpeg';
 import { motion } from 'framer-motion';
-import myResume from './assets/myresume.pdf'
+import myResume from './assets/Praise Adebayo.pdf'
 import './App.css'
 
 function App() {
