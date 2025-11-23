@@ -358,7 +358,7 @@ function App() {
             viewport={{ margin: "-100px" }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
-            <motion.div
+            {/* <motion.div
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               initial="initial"
@@ -386,7 +386,7 @@ function App() {
                 <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">PostgreSQL</motion.span>
                 <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Stripe API</motion.span>
               </div>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               variants={fadeInUp}
