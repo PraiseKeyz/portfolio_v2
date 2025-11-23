@@ -1,0 +1,62 @@
+[
+    {
+      "name": "GPS360 Academy",
+      "description": "A comprehensive online learning platform offering diverse courses, progress tracking, and interactive quizzes for an engaging educational experience.",
+      "link": "https://gps360academy.com",
+      "technologies": ["Next Js", "Node.Js", "Express.Js", "PostgreSQL", "Stripe API"]
+    },
+    {
+      "name": "Layer3 Cloud",
+      "description": "Designed and developed the professional portfolio interface for a Nigerian cloud company, showcasing their services and expertise as a dedicated frontend engineer.",
+      "link": "https://www.layer3.cloud",
+      "technologies": ["Next Js", "TailwindCSS"]
+    },
+    {
+      "name": "Creativity Verse",
+      "description": "A digital community for creators to collaborate, learn, and showcase their work. Join a vibrant space where innovation meets inspiration.",
+      "link": "https://beta.mycreativityverse.com",
+      "technologies": ["React", "TailwindCSS", "MongoDB", "Node.Js", "Express.Js"]
+    },
+    {
+      "name": "PaySub VTU Platform",
+      "description": "A virtual top-up platform for airtime, data bundles, and utility bill payments with secure payment integration.",
+      "link": "https://pay-sub.vercel.app",
+      "technologies": ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"]
+    },
+    {
+      "name": "Bookstore API",
+      "description": "A RESTful API for managing bookstore operations with authentication, CRUD operations, and comprehensive documentation.",
+      "link": "https://documenter.getpostman.com/view/28772794/2s9YsT5TDQ",
+      "technologies": ["Node.js", "Express", "MongoDB", "JWT"]
+    },
+    {
+      "name": "Text-to-Speech App",
+      "description": "A web application that converts text input into natural-sounding speech with multiple voice options and language support.",
+      "link": "https://labstudio.vercel.app",
+      "technologies": ["React", "Web Speech API", "CSS", "JavaScript"]
+    },
+    {
+      "name": "RAG-Enhanced LLM",
+      "description": "A fine-tuned language model enhanced with Retrieval Augmented Generation for improved context-aware responses and domain-specific knowledge.",
+      "link": "https://github.com/PraiseKeyz/Electron",
+      "technologies": ["Python", "Fast API", "Sentence Transformer", "sklearn", "Gemini"]
+    },
+    {
+      "name": "Color Guessing Game",
+      "description": "An interactive RGB color guessing game with multiple difficulty levels and score tracking.",
+      "link": "https://hngfrontendstage1.vercel.app",
+      "technologies": ["HTML5", "CSS3", "JavaScript", "DOM Manipulation"]
+    },
+    {
+      "name": "My Profile Card",
+      "description": "A responsive profile card component with modern design, animations, and social media integration.",
+      "link": "https://hngfrontendstage0.vercel.app",
+      "technologies": ["HTML5", "CSS3", "Flexbox", "CSS Grid"]
+    },
+    {
+      "name": "React Todo App",
+      "description": "A feature-rich todo application with task management, categories, and local storage persistence.",
+      "link": "https://todo-app-praisekeys.vercel.app",
+      "technologies": ["React", "TailwindCSS"]
+    }
+  ]
