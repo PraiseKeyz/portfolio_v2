@@ -358,9 +358,65 @@ function App() {
             viewport={{ margin: "-100px" }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
+            <motion.div
+              variants={fadeInUp}
+              whileHover={{ scale: 1.05 }}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ margin: "-100px" }}
+              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-primary font-bold">GPS360 Academy</h3>
+                <motion.a 
+                  whileHover={{ scale: 1.1 }}
+                  href="https://gps360academy.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
+                >
+                  <FaExternalLinkAlt className="w-4 h-4 text-black" />
+                </motion.a>
+              </div>
+              <p className="text-gray-600 mb-6 font-secondary">A comprehensive online learning platform offering diverse courses, progress tracking, and interactive quizzes for an engaging educational experience.</p>
+              <div className="flex flex-wrap gap-2">
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Next Js</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Node.Js</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Express.Js</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">PostgreSQL</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Stripe API</motion.span>
+              </div>
+            </motion.div>
 
+            <motion.div
+              variants={fadeInUp}
+              whileHover={{ scale: 1.05 }}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ margin: "-100px" }}
+              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
+            >
+              <div className="flex justify-between items-start mb-4">
+                <h3 className="text-2xl font-primary font-bold">Layer3 Cloud</h3>
+                <motion.a 
+                  whileHover={{ scale: 1.1 }}
+                  href="https://www.layer3.cloud" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
+                >
+                  <FaExternalLinkAlt className="w-4 h-4 text-black" />
+                </motion.a>
+              </div>
+              <p className="text-gray-600 mb-6 font-secondary">Designed and developed the professional portfolio interface for a Nigerian cloud company, showcasing their services and expertise as a dedicated frontend engineer.</p>
+              <div className="flex flex-wrap gap-2">
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Next Js</motion.span>
+                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">TailwindCSS</motion.span>
+              </div>
+            </motion.div>
 
-<motion.div
+            {/* Project Card 1 */}
+            <motion.div
               variants={fadeInUp}
               whileHover={{ scale: 1.05 }}
               initial="initial"
@@ -372,7 +428,7 @@ function App() {
                 <h3 className="text-2xl font-primary font-bold">Creativity Verse</h3>
                 <motion.a 
                   whileHover={{ scale: 1.1 }}
-                  href="https://creativity-verse.vercel.app" 
+                  href="https://beta.mycreativityverse.com" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
@@ -387,37 +443,6 @@ function App() {
                 <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">MongoDB</motion.span>
                 <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Node.Js</motion.span>
                 <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Express.Js</motion.span>
-              </div>
-            </motion.div>
-            {/* Project Card 1 */}
-            <motion.div
-              variants={fadeInUp}
-              whileHover={{ scale: 1.05 }}
-              initial="initial"
-              whileInView="animate"
-              viewport={{ margin: "-100px" }}
-              className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300"
-            >
-              <div className="flex justify-between items-start mb-4">
-                <h3 className="text-2xl font-primary font-bold">Learn Whitehouse</h3>
-                <motion.a 
-                  whileHover={{ scale: 1.1 }}
-                  href="https://www.learnwhitehouse.com" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="bg-gray-100 p-2 rounded-full hover:bg-gray-200 transition-all"
-                >
-                  <FaExternalLinkAlt className="w-4 h-4 text-black" />
-                </motion.a>
-              </div>
-              <p className="text-gray-600 mb-6 font-secondary">An interactive learning platform with course management, student tracking, and real-time assessment features.</p>
-              <div className="flex flex-wrap gap-2">
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">React</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">TailwindCSS</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">MongoDB</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Node.Js</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">Express.Js</motion.span>
-                <motion.span whileHover={{ scale: 1.05 }} className="px-3 py-1 bg-gray-100 rounded-full text-sm font-secondary">AI model</motion.span>
               </div>
             </motion.div>
 
