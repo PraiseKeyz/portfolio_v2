@@ -34,14 +34,14 @@ export default function SkillsCard({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: '-50px' }}
-      className="group relative p-6 rounded-xl border border-gray-800 bg-gradient-to-br from-gray-900 to-black hover:border-blue-500/50 transition-all duration-300"
+      className="group relative p-6 rounded-xl border border-gray-800 bg-gradient-to-br from-gray-900 to-black hover:border-white/50 transition-all duration-300"
     >
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/10 to-purple-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur" />
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-gray-500/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur" />
 
       <div className="relative z-10 space-y-4">
         <div className="flex items-center gap-3">
           {icon && (
-            <div className="text-2xl text-blue-400">
+            <div className="text-2xl text-white">
               {icon}
             </div>
           )}
@@ -55,7 +55,7 @@ export default function SkillsCard({
             <motion.span
               key={idx}
               whileHover={{ scale: 1.05 }}
-              className="px-3 py-1 bg-gray-800 text-gray-300 text-xs sm:text-sm rounded-full font-secondary hover:bg-blue-500/20 hover:text-blue-300 transition-all duration-300 cursor-default"
+              className="px-3 py-1 bg-gray-800 text-gray-300 text-xs sm:text-sm rounded-full font-secondary hover:bg-white/10 hover:text-white transition-all duration-300 cursor-default"
             >
               {skill}
             </motion.span>

@@ -42,16 +42,16 @@ export default function ProjectCard({
       whileInView="visible"
       viewport={{ once: true, margin: '-50px' }}
       whileHover={{ y: -8 }}
-      className="group relative rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-black overflow-hidden hover:border-blue-500/50 transition-all duration-300"
+      className="group relative rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900 to-black overflow-hidden hover:border-white/50 transition-all duration-300"
     >
       {/* Background gradient on hover */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur" />
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-gray-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur" />
 
       <div className="relative z-10 p-6 sm:p-8 h-full flex flex-col">
         {/* Header with icon */}
         <div className="flex items-start justify-between mb-4">
           {icon && (
-            <div className="text-3xl sm:text-4xl text-blue-400 group-hover:scale-110 transition-transform">
+            <div className="text-3xl sm:text-4xl text-white group-hover:scale-110 transition-transform">
               {icon}
             </div>
           )}
@@ -72,7 +72,7 @@ export default function ProjectCard({
           {technologies.map((tech, idx) => (
             <span
               key={idx}
-              className="px-2 py-1 text-xs bg-gray-800/50 text-gray-300 rounded-md font-secondary hover:bg-blue-500/20 hover:text-blue-300 transition-all cursor-default"
+              className="px-2 py-1 text-xs bg-gray-800/50 text-gray-300 rounded-md font-secondary hover:bg-white/10 hover:text-white transition-all cursor-default"
             >
               {tech}
             </span>
@@ -88,7 +88,7 @@ export default function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
               >
                 <FaGithub /> Code
               </motion.a>
@@ -99,7 +99,7 @@ export default function ProjectCard({
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
-                className="flex items-center gap-2 text-sm text-gray-400 hover:text-blue-400 transition-colors"
+                className="flex items-center gap-2 text-sm text-gray-400 hover:text-white transition-colors"
               >
                 <FaExternalLinkAlt /> Live
               </motion.a>

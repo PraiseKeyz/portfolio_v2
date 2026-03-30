@@ -85,7 +85,7 @@ export default function ContactSection({
           {/* Header */}
           <motion.div variants={itemVariants} className="text-center space-y-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-primary tracking-tight">
-              Let&apos;s <span className="text-blue-400">Connect</span>
+              Let&apos;s <span className="text-white">Connect</span>
             </h2>
             <p className="text-base sm:text-lg text-gray-400 font-secondary max-w-2xl mx-auto">
               I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out!

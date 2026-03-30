@@ -40,7 +40,7 @@ export default function Header({ onDownloadCV }: HeaderProps) {
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: 'easeOut' }}
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-[#0a0a0a]/95 backdrop-blur-lg shadow-2xl shadow-blue-500/10 border-b border-blue-500/20' : 'bg-transparent'
+        isScrolled ? 'bg-[#0a0a0a]/95 backdrop-blur-lg shadow-lg border-b border-gray-800' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">

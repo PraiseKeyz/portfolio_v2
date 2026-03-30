@@ -37,22 +37,22 @@ export default function ExperienceCard({
       whileInView="visible"
       viewport={{ once: true, margin: '-100px' }}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="group relative p-6 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm hover:border-blue-500/50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:shadow-blue-500/10"
+      className="group relative p-6 rounded-2xl border border-gray-800 bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-sm hover:border-white/50 transition-all duration-300 shadow-lg hover:shadow-2xl"
     >
       {/* Background accent */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg" />
+      <div className="absolute -inset-0.5 bg-gradient-to-r from-white/10 to-gray-500/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-lg" />
 
       <div className="relative z-10 space-y-4">
         {/* Header */}
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
             <div className="flex items-center gap-2 mb-2">
-              <FaBriefcase className="text-blue-400 text-lg" />
+              <FaBriefcase className="text-white text-lg" />
               <h3 className="text-lg sm:text-xl font-bold font-primary text-white">
                 {role}
               </h3>
             </div>
-            <p className="text-sm sm:text-base font-secondary text-blue-300 font-semibold">
+            <p className="text-sm sm:text-base font-secondary text-gray-300 font-semibold">
               {company}
             </p>
           </div>

@@ -69,7 +69,7 @@ export default function ProjectsSection({
           className="mb-12 sm:mb-16 md:mb-20 space-y-4"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-primary tracking-tight">
-            Featured <span className="text-blue-400">Projects</span>
+            Featured <span className="text-white">Projects</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-400 font-secondary max-w-2xl">
             A selection of key projects that showcase my expertise in backend architecture, integrations, and full-stack development.
@@ -112,7 +112,7 @@ export default function ProjectsSection({
             rel="noopener noreferrer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-8 py-3 bg-gray-800 text-white font-secondary font-semibold rounded-lg hover:bg-blue-500 transition-all duration-300"
+            className="inline-block px-8 py-3 bg-gray-800 text-white font-secondary font-semibold rounded-lg hover:bg-white hover:text-black transition-all duration-300"
           >
             View GitHub Profile
           </motion.a>

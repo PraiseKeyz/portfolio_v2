@@ -73,7 +73,7 @@ export default function SkillsSection({
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold font-primary tracking-tight">
             Skills &{' '}
-            <span className="text-blue-400">Expertise</span>
+            <span className="text-white">Expertise</span>
           </h2>
           <p className="text-base sm:text-lg text-gray-400 font-secondary max-w-2xl">
             A comprehensive toolkit of technologies, frameworks, and methodologies that power my development approach.

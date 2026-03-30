@@ -10,7 +10,6 @@ const config: Config = {
       colors: {
         background: '#0a0a0a',
         foreground: '#ffffff',
-        accent: '#0066ff',
       },
       fontFamily: {
         primary: ['Michroma', 'sans-serif'],
@@ -39,13 +38,12 @@ const config: Config = {
           '100%': { opacity: '1' },
         },
         glowAnimation: {
-          '0%, 100%': { boxShadow: '0 0 5px rgba(0, 102, 255, 0.5)' },
-          '50%': { boxShadow: '0 0 20px rgba(0, 102, 255, 0.8)' },
+          '0%, 100%': { boxShadow: '0 0 5px rgba(255, 255, 255, 0.3)' },
+          '50%': { boxShadow: '0 0 20px rgba(255, 255, 255, 0.5)' },
         },
       },
       boxShadow: {
-        'glow-blue': '0 0 20px rgba(0, 102, 255, 0.5)',
-        'glow-purple': '0 0 20px rgba(147, 51, 234, 0.5)',
+        'glow': '0 0 20px rgba(255, 255, 255, 0.3)',
       },
     },
   },

@@ -42,8 +42,8 @@ export default function Hero({
     <section className="relative min-h-screen bg-gradient-to-b from-[#0a0a0a] via-[#1a1a1a] to-[#0a0a0a] pt-24 sm:pt-32 pb-12 sm:pb-20 overflow-hidden">
       {/* Background animation elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl opacity-20 animate-pulse" />
-        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl opacity-10 animate-pulse" />
+        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-96 h-96 bg-white/5 rounded-full blur-3xl opacity-10 animate-pulse" />
+        <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-gray-500/5 rounded-full blur-3xl opacity-5 animate-pulse" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -58,7 +58,7 @@ export default function Hero({
             <motion.div variants={fadeInUp} className="space-y-4">
               <motion.span
                 variants={fadeInUp}
-                className="inline-block text-sm sm:text-base bg-blue-500/10 border border-blue-500/30 text-blue-300 px-4 py-2 rounded-full font-secondary"
+                className="inline-block text-sm sm:text-base bg-white/10 border border-white/30 text-white px-4 py-2 rounded-full font-secondary"
               >
                 Welcome to my portfolio
               </motion.span>
@@ -68,7 +68,7 @@ export default function Hero({
                 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-primary leading-tight tracking-tight"
               >
                 Creative Software{' '}
-                <span className="bg-gradient-to-r from-blue-400 via-blue-300 to-cyan-400 bg-clip-text text-transparent animate-gradient">
+                <span className="text-white">
                   Engineer
                 </span>
               </motion.h1>
