@@ -1,11 +1,20 @@
 import { useState, useEffect } from 'react';
-import { FaReact, FaNodeJs, FaGitAlt, FaLinkedin, FaFacebook, FaTwitter,  FaHandshake, FaEnvelope, FaPhone, FaMapMarkerAlt, FaExternalLinkAlt, FaBriefcase, FaWhatsapp } from 'react-icons/fa';
+import { FaReact, FaNodeJs, FaGitAlt, FaLinkedin, FaFacebook, FaTwitter,  FaHandshake, FaEnvelope, FaPhone, FaMapMarkerAlt, FaExternalLinkAlt, FaBriefcase, FaWhatsapp, FaLaptopCode, FaServer, FaRocket, FaBrain, FaCloud, FaSyncAlt, FaMusic } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiPython, SiMongodb } from 'react-icons/si';
 import praise from './assets/praise.jpeg';
 import { motion } from 'framer-motion';
 import myResume from './assets/Praise Adebayo.pdf'
 import './App.css'
 import { services, projects, experience } from './data/portfolioData';
+
+const iconMap = {
+  frontend: <FaLaptopCode />,
+  backend: <FaServer />,
+  fullstack: <FaRocket />,
+  ml: <FaBrain />,
+  cloud: <FaCloud />,
+  devops: <FaSyncAlt />,
+};
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,8 +36,8 @@ function App() {
   }
 
   const fadeInUp = {
-    initial: { opacity: 0 },
-    animate: { opacity: 1 },
+    initial: { y: 40, opacity: 0 },
+    animate: { y: 0, opacity: 1 },
     transition: { duration: 0.5 }
   };
 
@@ -56,7 +65,7 @@ function App() {
             whileHover={{ scale: 1.05 }}
             className="text-lg sm:text-xl lg:text-2xl font-bold font-primary flex items-center gap-2"
           >
-            PraiseKeyz <span className="text-xl animate-bounce">🎹</span>
+            PraiseKeyz <span className="text-xl animate-pulse text-gray-700"><FaMusic /></span>
           </motion.h2>
           
           <div className='flex items-center gap-2'>
@@ -186,8 +195,9 @@ function App() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="flex-1 relative mt-8 md:mt-0"
             >
@@ -207,7 +217,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ amount: 0.1 }}
         className="py-20 px-6 "
       >
         <div className="container mx-auto">
@@ -215,7 +225,7 @@ function App() {
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             className="text-4xl font-primary font-bold mb-12"
           >
             My Services
@@ -224,7 +234,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {services.map((service) => (
@@ -235,7 +245,7 @@ function App() {
                 className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer border border-gray-100"
               >
                 <div className={`${service.color} mb-4 text-4xl group-hover:scale-110 transition-transform duration-300`}>
-                  {service.icon}
+                  {iconMap[service.icon]}
                 </div>
                 <h3 className="text-2xl font-primary font-bold mb-4">{service.title}</h3>
                 <p className="text-gray-600 font-secondary">
@@ -251,7 +261,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ amount: 0.1 }}
         id='projects'
         className="py-20 px-6 bg-[#efefed] rounded-t-[50px] rounded-b-[50px]"
       >
@@ -266,7 +276,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {projects.map((project) => (
@@ -312,7 +322,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ amount: 0.1 }}
         className="py-20 px-6"
       >
         <div className="container mx-auto">
@@ -326,7 +336,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             className="relative"
           >
             {/* Timeline line */}
@@ -385,7 +395,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
+        viewport={{ amount: 0.1 }}
         id='contacts' 
         className="py-20 px-6 bg-[#efefed] rounded-t-[50px]"
       >
@@ -393,7 +403,7 @@ function App() {
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             transition={{ duration: 0.5 }}
           >
             <FaHandshake className="text-6xl mx-auto mb-6 text-black" />
@@ -417,13 +427,13 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true }}
+            viewport={{ amount: 0.1 }}
             className="space-y-6 mb-12"
           >
             <motion.div variants={fadeInUp}
               initial="initial"
               whileInView="animate"
-              viewport={{ once: true }}
+              viewport={{ amount: 0.1 }}
              className="flex items-center justify-center gap-3">
               <FaEnvelope className="text-xl text-gray-700" />
               <motion.a 
@@ -463,7 +473,7 @@ function App() {
             variants={fadeInUp}
             className="flex justify-between items-center"
           >
-            <span className="text-gray-600 font-secondary">© 2024 Praisekeyz6</span>
+            <span className="text-gray-600 font-secondary">© {new Date().getFullYear()} Praisekeyz6</span>
             <div className="flex gap-6">
               <motion.a 
                 whileHover={{ scale: 1.2, color: '#0077B5' }}

@@ -5,42 +5,42 @@ export const services = [
     id: 1,
     title: 'Frontend Development',
     description: 'Crafting responsive and intuitive user interfaces with modern frameworks and pixel-perfect design implementation.',
-    icon: '💻',
+    icon: 'frontend',
     color: 'text-blue-600'
   },
   {
     id: 2,
     title: 'Backend Development',
     description: 'Building robust server-side applications with scalable architecture and efficient database management.',
-    icon: '⚙️',
+    icon: 'backend',
     color: 'text-green-600'
   },
   {
     id: 3,
     title: 'Full Stack Development',
     description: 'End-to-end application development combining frontend finesse with backend expertise.',
-    icon: '🚀',
+    icon: 'fullstack',
     color: 'text-purple-600'
   },
   {
     id: 4,
     title: 'ML Engineering',
     description: 'Developing intelligent solutions using machine learning algorithms and data-driven approaches to solve complex problems.',
-    icon: '🧠',
+    icon: 'ml',
     color: 'text-red-600'
   },
   {
     id: 5,
     title: 'Cloud Computing',
     description: 'Architecting and deploying scalable cloud solutions using AWS, Azure, or GCP for optimal performance and reliability.',
-    icon: '☁️',
+    icon: 'cloud',
     color: 'text-cyan-600'
   },
   {
     id: 6,
     title: 'DevOps Engineering',
     description: 'Implementing CI/CD pipelines and automating deployment processes for seamless software delivery and operations.',
-    icon: '🔄',
+    icon: 'devops',
     color: 'text-orange-600'
   }
 ];
