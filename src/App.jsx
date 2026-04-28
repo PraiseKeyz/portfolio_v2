@@ -27,8 +27,8 @@ function App() {
   }
 
   const fadeInUp = {
-    initial: { y: 50, opacity: 0 },
-    animate: { y: 0, opacity: 1 },
+    initial: { opacity: 0 },
+    animate: { opacity: 1 },
     transition: { duration: 0.5 }
   };
 
@@ -186,8 +186,8 @@ function App() {
             </motion.div>
 
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
               className="flex-1 relative mt-8 md:mt-0"
             >
@@ -207,7 +207,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ once: true }}
         className="py-20 px-6 "
       >
         <div className="container mx-auto">
@@ -215,7 +215,7 @@ function App() {
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
-            viewport={{ margin: "-100px" }}
+            viewport={{ once: true }}
             className="text-4xl font-primary font-bold mb-12"
           >
             My Services
@@ -224,7 +224,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ margin: "-100px" }}
+            viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {services.map((service) => (
@@ -251,7 +251,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ once: true }}
         id='projects'
         className="py-20 px-6 bg-[#efefed] rounded-t-[50px] rounded-b-[50px]"
       >
@@ -266,7 +266,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ margin: "-100px" }}
+            viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {projects.map((project) => (
@@ -312,7 +312,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ once: true }}
         className="py-20 px-6"
       >
         <div className="container mx-auto">
@@ -326,7 +326,7 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true }}
             className="relative"
           >
             {/* Timeline line */}
@@ -385,7 +385,7 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        viewport={{ margin: "-100px" }}
+        viewport={{ once: true }}
         id='contacts' 
         className="py-20 px-6 bg-[#efefed] rounded-t-[50px]"
       >
@@ -393,7 +393,7 @@ function App() {
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            viewport={{ margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
             <FaHandshake className="text-6xl mx-auto mb-6 text-black" />
@@ -417,13 +417,13 @@ function App() {
             variants={staggerContainer}
             initial="initial"
             whileInView="animate"
-            viewport={{ margin: "-100px" }}
+            viewport={{ once: true }}
             className="space-y-6 mb-12"
           >
             <motion.div variants={fadeInUp}
               initial="initial"
               whileInView="animate"
-              viewport={{ margin: "-100px" }}
+              viewport={{ once: true }}
              className="flex items-center justify-center gap-3">
               <FaEnvelope className="text-xl text-gray-700" />
               <motion.a 
