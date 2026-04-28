@@ -50,9 +50,8 @@ export const projects = [
     id: 1,
     title: 'DailyDrip — Personal Finance App',
     description: 'A mobile-first personal finance app with a unique time-locked envelope budgeting system — auto-disbursing daily allowances from locked category budgets.',
-    link: '#',
-    tags: ['NestJS', 'Next.js', 'PostgreSQL', 'TypeScript'],
-    isInternal: true
+    link: 'https://daily-drip-app.vercel.app',
+    tags: ['NestJS', 'Next.js', 'PostgreSQL', 'TypeScript']
   },
   {
     id: 2,
